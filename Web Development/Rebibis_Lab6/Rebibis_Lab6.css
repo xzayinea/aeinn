@@ -1,0 +1,54 @@
+body {
+    box-shadow: 0ch 0ch 0ch 100ch white;
+    background-color: white;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;  
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+form {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+
+    display: flex;
+    gap: 10px;         
+    flex-wrap: wrap;   
+}
+
+form input {
+    flex: 10;           
+    min-width: 150px;   
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 8px 15px;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+th {
+  background-color: rgb(20, 19, 66);
+  color: white;
+}
+
+table {
+  border-radius: 5px;
+}
+
+.prod-table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 100%;
+}

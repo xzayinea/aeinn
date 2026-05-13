@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Restaurant</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: palatino;
+            background-image: url("bg.jpg");
+            min-height: 120vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 90px;
+            width: 320px;
+            height: auto;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            position: relative;
+        }
+
+        .card::before {
+            content: " ";  
+            position: absolute;      
+            top: -15px;
+            right: -80px;
+            width: 170px;
+            height: 130px;
+            background-image: url("ribbon.png");
+            background-size: cover;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            bottom: -55px;
+            left: -80px;
+            width: 150px;     
+            height: 150px;
+            background-image: url("for valentines theme.jpg"); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;  
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: #555;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        input:focus {
+            border-color: #ff4d6d;
+            box-shadow: 0 0 5px rgba(255, 77, 109, 0.5);
+        }
+
+        input[type="submit"] {
+            background: red;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1><b>HTML Restaurant</b></h1>
+
+    <label>Name:</label><br>
+    <input type="text"><br>
+
+    <label>Email:</label><br>
+    <input type="email"><br>
+
+    <label>Phone No.:</label><br>
+    <input type="tel"><br>
+
+    <label>Date:</label><br>
+    <input type="date"><br>
+
+    <label>How many persons will be with you?:</label><br>
+    <input type="number"><br>
+
+    <label>Notes:</label><br>
+    <input type="text"><br>
+
+    <label>Entry:</label><br>
+    <input type="text"><br>
+
+    <input type="submit" value="❤ Submit ❤">
+
+    <div class = "card:after">
+        <h1>Happy Hearts Day!</h1>
+    </div>
+</div>
+
+</body>
+</html>

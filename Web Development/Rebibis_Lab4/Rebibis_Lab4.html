@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "en>
+<head>
+    <meta charset="UTF-8">
+    <title>tictactoetoetoetoe</title>
+    <style>
+
+        idk{
+            box-sizing: border-box;
+            font-family: arial, sanf-serif;
+        }
+
+        body {
+            margin:0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+        }
+
+        .game {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: blue; /*tictactoe */
+            margin-bottom: 20px;
+        }
+
+        .board {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 5px;
+            color: red; 
+        }
+
+        .board button {
+            color: green;
+            width: 100px;
+            height: 100px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .board button:hover {
+            background-color: rgb(125, 199, 223);
+        }
+
+        .reset {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        } 
+
+        .reset:hover {
+            background-color: blueviolet;
+            color: white;
+        } 
+
+
+    </style>
+</head>
+
+<body>
+    <div class="game">
+        <h1>TIC-TAC-TOE</h1>
+        <div class="board">
+
+            <button>x</button>
+            <button></button>   
+            <button>x</button>
+
+            <button>o</button>
+            <button></button>
+            <button>o</button>
+
+            <button>o</button>
+            <button>o</button>
+            <button>o</button>
+            </div> 
+
+            <div class="reset">Reset Game</div>
+    
+        </div>
+     
+</body>
+</html>
+
+
